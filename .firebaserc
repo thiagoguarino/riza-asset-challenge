@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "riza-seed-f0b83"
+  },
+  "targets": {
+    "riza-seed-f0b83": {
+      "hosting": {
+        "staging": [
+          "riza-seed-staging"
+        ],
+        "production": [
+          "riza-seed-f0b83"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
