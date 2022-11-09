@@ -1,0 +1,290 @@
+// Brand Colors Helpers
+// Primary Colors
+.brand-color-primary-pure {
+  color: var(--brand-color-primary-pure);
+  &--bg {
+    background-color: var(--brand-color-primary-pure);
+  }
+}
+
+.brand-color-primary-light {
+  color: var(--brand-color-primary-light);
+  &--bg {
+    background-color: var(--brand-color-primary-light);
+  }
+}
+
+.brand-color-primary-medium {
+  color: var(--brand-color-primary-medium);
+  &--bg {
+    background-color: var(--brand-color-primary-medium);
+  }
+}
+
+.brand-color-primary-dark {
+  color: var(--brand-color-primary-dark);
+  &--bg {
+    background-color: var(--brand-color-primary-dark);
+  }
+}
+
+// Secondary Colors
+.brand-color-secondary-pure {
+  color: var(--brand-color-secondary-pure);
+  &--bg {
+    background-color: var(--brand-color-secondary-pure);
+  }
+}
+
+.brand-color-secondary-light {
+  color: var(--brand-color-secondary-light);
+  &--bg {
+    background-color: var(--brand-color-secondary-light);
+  }
+}
+
+.brand-color-secondary-medium {
+  color: var(--brand-color-secondary-medium);
+  &--bg {
+    background-color: var(--brand-color-secondary-medium);
+  }
+}
+
+.brand-color-secondary-dark {
+  color: var(--brand-color-secondary-dark);
+  &--bg {
+    background-color: var(--brand-color-secondary-dark);
+  }
+}
+
+// Highlight Colors
+.highlight-color-pure {
+  color: var(--highlight-color-pure);
+  &--bg {
+    background-color: var(--highlight-color-pure);
+  }
+}
+
+.highlight-color-light {
+  color: var(--highlight-color-light);
+  &--bg {
+    background-color: var(--highlight-color-light);
+  }
+}
+
+.highlight-color-medium {
+  color: var(--highlight-color-medium);
+  &--bg {
+    background-color: var(--highlight-color-medium);
+  }
+}
+
+.highlight-color-dark {
+  color: var(--highlight-color-dark);
+  &--bg {
+    background-color: var(--highlight-color-dark);
+  }
+}
+
+// Neutral Colors
+.neutral-color-low-pure {
+  color: var(--neutral-color-low-pure);
+  &--bg {
+    background-color: var(--neutral-color-low-pure);
+  }
+}
+
+.neutral-color-low-light {
+  color: var(--neutral-color-low-light);
+  &--bg {
+    background-color: var(--neutral-color-low-light);
+  }
+}
+
+.neutral-color-low-medium {
+  color: var(--neutral-color-low-medium);
+  &--bg {
+    background-color: var(--neutral-color-low-medium);
+  }
+}
+
+.neutral-color-low-dark {
+  color: var(--neutral-color-low-dark);
+  &--bg {
+    background-color: var(--neutral-color-low-dark);
+  }
+}
+
+.neutral-color-high-pure {
+  color: var(--neutral-color-high-pure);
+  &--bg {
+    background-color: var(--neutral-color-high-pure);
+  }
+}
+
+.neutral-color-high-light {
+  color: var(--neutral-color-high-light);
+  &--bg {
+    background-color: var(--neutral-color-high-light);
+  }
+}
+
+.neutral-color-high-medium {
+  color: var(--neutral-color-high-medium);
+  &--bg {
+    background-color: var(--neutral-color-high-medium);
+  }
+}
+
+.neutral-color-high-dark {
+  color: var(--neutral-color-high-dark);
+  &--bg {
+    background-color: var(--neutral-color-high-dark);
+  }
+}
+
+// Feedback Colors
+// Warning
+.feedback-color-warning-pure {
+  color: var(--feedback-color-warning-pure);
+  &--bg {
+    background-color: var(--feedback-color-warning-pure);
+  }
+}
+
+.feedback-color-warning-light {
+  color: var(--feedback-color-warning-light);
+  &--bg {
+    background-color: var(--feedback-color-warning-light);
+  }
+}
+
+.feedback-color-warning-medium {
+  color: var(--feedback-color-warning-medium);
+  &--bg {
+    background-color: var(--feedback-color-warning-medium);
+  }
+}
+
+.feedback-color-warning-dark {
+  color: var(--feedback-color-warning-dark);
+  &--bg {
+    background-color: var(--feedback-color-warning-dark);
+  }
+}
+
+// Helper
+.feedback-color-helper-pure {
+  color: var(--feedback-color-helper-pure);
+  &--bg {
+    background-color: var(--feedback-color-helper-pure);
+  }
+}
+
+.feedback-color-helper-light {
+  color: var(--feedback-color-helper-light);
+  &--bg {
+    background-color: var(--feedback-color-helper-light);
+  }
+}
+
+.feedback-color-helper-medium {
+  color: var(--feedback-color-helper-medium);
+  &--bg {
+    background-color: var(--feedback-color-helper-medium);
+  }
+}
+
+.feedback-color-helper-dark {
+  color: var(--feedback-color-helper-dark);
+  &--bg {
+    background-color: var(--feedback-color-helper-dark);
+  }
+}
+
+// Info
+.feedback-color-info-pure {
+  color: var(--feedback-color-info-pure);
+  &--bg {
+    background-color: var(--feedback-color-info-pure);
+  }
+}
+
+.feedback-color-info-light {
+  color: var(--feedback-color-info-light);
+  &--bg {
+    background-color: var(--feedback-color-info-light);
+  }
+}
+
+.feedback-color-info-medium {
+  color: var(--feedback-color-info-medium);
+  &--bg {
+    background-color: var(--feedback-color-info-medium);
+  }
+}
+
+.feedback-color-info-dark {
+  color: var(--feedback-color-info-dark);
+  &--bg {
+    background-color: var(--feedback-color-info-dark);
+  }
+}
+
+// Success
+.feedback-color-success-pure {
+  color: var(--feedback-color-success-pure);
+  &--bg {
+    background-color: var(--feedback-color-success-pure);
+  }
+}
+
+.feedback-color-success-light {
+  color: var(--feedback-color-success-light);
+  &--bg {
+    background-color: var(--feedback-color-success-light);
+  }
+}
+
+.feedback-color-success-medium {
+  color: var(--feedback-color-success-medium);
+  &--bg {
+    background-color: var(--feedback-color-success-medium);
+  }
+}
+
+.feedback-color-success-dark {
+  color: var(--feedback-color-success-dark);
+  &--bg {
+    background-color: var(--feedback-color-success-dark);
+  }
+}
+
+// Fail
+.feedback-color-fail-pure {
+  color: var(--feedback-color-fail-pure);
+  &--bg {
+    background-color: var(--feedback-color-fail-pure);
+  }
+}
+
+.feedback-color-fail-light {
+  color: var(--feedback-color-fail-light);
+  &--bg {
+    background-color: var(--feedback-color-fail-light);
+  }
+}
+
+.feedback-color-fail-medium {
+  color: var(--feedback-color-fail-medium);
+  &--bg {
+    background-color: var(--feedback-color-fail-medium);
+  }
+}
+
+.feedback-color-fail-dark {
+  color: var(--feedback-color-fail-dark);
+  &--bg {
+    background-color: var(--feedback-color-fail-dark);
+  }
+}

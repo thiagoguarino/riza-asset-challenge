@@ -1,0 +1,44 @@
+:root {
+  // Typography
+
+  // Font Family
+  --font-family-highlight: "Reckless";
+  --font-family-base: "ABC Diatype";
+
+  // Font Weight
+  --font-weight-bold: 700;
+  --font-weight-regular: 600;
+  --font-weight-light: 400;
+
+  // Font Size
+  --font-size-nano: 0.5rem;
+  --font-size-micro: 0.563rem;
+  --font-size-tiny: 0.625rem;
+  --font-size-xxxs: 0.75rem;
+  --font-size-xxs: 0.875rem;
+  --font-size-xs: 1rem;
+  --font-size-sm: 1.25rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 2.5rem;
+  --font-size-xxl: 3rem;
+  --font-size-xxxl: 4rem;
+  --font-size-display: 5rem;
+  --font-size-giant: 6rem;
+
+  // Fluid Typography
+  // --font-size-nano: clamp(0.2097rem, -0.0926vw + 0.2329rem, 0.1588rem);
+  // --font-size-micro: clamp(0.2621rem, -0.0918vw + 0.2851rem, 0.2117rem);
+  // --font-size-tiny: clamp(0.3277rem, -0.0828vw + 0.3484rem, 0.2822rem);
+  // --font-size-xxxs: clamp(0.4096rem, -0.0609vw + 0.4248rem, 0.3761rem);
+  // --font-size-xxs: clamp(0.512rem, -0.0194vw + 0.5168rem, 0.5014rem);
+  // --font-size-xs: clamp(0.64rem, 0.0515vw + 0.6271rem, 0.6683rem);
+  // --font-size-sm: clamp(0.8rem, 0.1652vw + 0.7587rem, 0.8908rem);
+  // --font-size-md: clamp(1rem, 0.3409vw + 0.9148rem, 1.1875rem);
+  // --font-size-lg: clamp(1.25rem, 0.6053vw + 1.0987rem, 1.5829rem);
+  // --font-size-xl: clamp(1.5625rem, 0.9956vw + 1.3136rem, 2.1101rem);
+  // --font-size-xxl: clamp(1.9531rem, 1.5629vw + 1.5624rem, 2.8127rem);
+  // --font-size-xxxl: clamp(2.4414rem, 2.3781vw + 1.8469rem, 3.7493rem);
+  // --font-size-display: clamp(3.0518rem, 3.5384vw + 2.1672rem, 4.9979rem);
+  // --font-size-giant: clamp(3.8147rem, 5.1772vw + 2.5204rem, 6.6622rem);
+}

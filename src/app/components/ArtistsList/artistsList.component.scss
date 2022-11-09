@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+  font-family: "Reckless";
+  font-style: italic;
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: -.0625rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  object-fit: cover;
+  width: 128px;
+  height: 128px;
+  box-shadow: 0 16px 32px #00000052;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item {
+  color: var(--brand-color-primary-pure);
+  text-align: center;
+  font-size: var(--font-size-xxs);
+  vertical-align: top;
+  width: 120px;
+  margin: 10px;
+}
+
+.all {
+  position: relative;
+  bottom: 300px;
+}

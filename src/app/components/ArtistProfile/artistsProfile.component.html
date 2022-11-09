@@ -1,0 +1,11 @@
+<div class="all">
+  <img src={{artistData.photo}} alt="{{artistData.altText}}"/>
+  <div class="artist-info">
+    <h1>{{artistData.name}}</h1>
+    <div *ngFor="let paragraph of artistData.description">
+      <p>
+        {{paragraph}}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+// For static vars we use Sass
+$width-xs: 100%;
+$width-sm: 320px;
+$width-md: 768px; //48rem
+$width-lg: 1336px;
+$width-xl: 1440px; //90rem
+$width-xxl: 1920px;
+
+// For dynamically scoped vars we use CSS Custom Props (aka. CSS Variables)
+:root {
+  // Grid
+  --ion-grid-width-xs: 100%;
+  --ion-grid-width-sm: 320px;
+  --ion-grid-width-md: 768px;
+  --ion-grid-width-lg: 1336px;
+  --ion-grid-width-xl: 1440px;
+  --ion-grid-width-xxl: 1920px;
+
+  // Super Large Screens - Fix Width Layout - Magazine Mode
+  @media only screen and (min-width: $width-xxl) {
+    ion-app {
+      margin: 0 auto;
+      width: var(--ion-grid-width-xxl);
+    }
+  }
+}

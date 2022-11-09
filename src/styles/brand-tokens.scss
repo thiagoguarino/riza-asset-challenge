@@ -1,0 +1,63 @@
+:root {
+  // Brand Colors
+
+  // Primary
+  --brand-color-primary-pure: #000000;
+  --brand-color-primary-light: #a3a3a3;
+  --brand-color-primary-medium: #666666;
+  --brand-color-primary-dark: #292929;
+
+  // Secondary
+  --brand-color-secondary-pure: #3c875f;
+  --brand-color-secondary-light: #66e8a3;
+  --brand-color-secondary-medium: #50b57f;
+  --brand-color-secondary-dark: #4d695a;
+
+  // Highlights
+  --highlight-color-pure: #f673ad;
+  --highlight-color-light: #fdd9e9;
+  --highlight-color-medium: #900945;
+  --highlight-color-dark: #430420;
+
+  // Neutral
+  --neutral-color-low-pure: #000000;
+  --neutral-color-low-light: #a3a3a3;
+  --neutral-color-low-medium: #666666;
+  --neutral-color-low-dark: #292929;
+
+  --neutral-color-high-pure: #ffffff;
+  --neutral-color-high-light: #f5f5f5;
+  --neutral-color-high-medium: #e0e0e0;
+  --neutral-color-high-dark: #d3d3d3;
+
+  // Feedback
+  // Warning
+  --feedback-color-warning-pure: #9847f5;
+  --feedback-color-warning-light: #d9bbfb;
+  --feedback-color-warning-medium: #6d469b;
+  --feedback-color-warning-dark: #4e148f;
+
+  // Helper
+  --feedback-color-helper-pure: #ff8a00;
+  --feedback-color-helper-light: #ffe3c2;
+  --feedback-color-helper-medium: #cc6e00;
+  --feedback-color-helper-dark: #7a4200;
+
+  // Info
+  --feedback-color-info-pure: #1474ff;
+  --feedback-color-info-light: #d6e7ff;
+  --feedback-color-info-medium: #00327a;
+  --feedback-color-info-dark: #001129;
+
+  // Success
+  --feedback-color-success-pure: #3c875f;
+  --feedback-color-success-light: #66e8a3;
+  --feedback-color-success-medium: #50b57f;
+  --feedback-color-success-dark: #4d695a;
+
+  // Fail
+  --feedback-color-fail-pure: #f50041;
+  --feedback-color-fail-light: #ff92af;
+  --feedback-color-fail-medium: #fa0043;
+  --feedback-color-fail-dark: #7a253c;
+}

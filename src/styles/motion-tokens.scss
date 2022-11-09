@@ -1,0 +1,38 @@
+:root {
+  // Motion Tokens Globals
+
+  // Scale
+  --scale-small: 5%;
+  --scale-medium: 25%;
+  --scale-large: 50%;
+
+  // Rotation
+  --rotation-tilt: 90;
+  --rotation-flip: 180;
+  --rotation-roll: 360;
+
+  // Velocity
+  --velocity-slow: 0.275;
+  --velocity-medium: 0.225;
+  --velocity-fast: 0.2;
+
+  // Vibe
+  --vibe-soft: Cubic-bezier(0.48, 0, 0.48, 1);
+  --vibe-calm: Cubic-bezier(0.64, 0, 0.92, 1);
+  --vibe-energic: Cubic-bezier(0.08, 0, 0.35, 1);
+
+  // Switch
+  --switch-low: --velocity-slow, --vibe-soft;
+  --switch-medium: --velocity-medium, --vibe-calm;
+  --switch-fast: --velocity-fast, --vibe-energetic;
+
+  // Spin
+  --spin-low: --rotation-tilt, --velocity-slow, --vibe-soft;
+  --spin-medium: --rotation-flip, --velocity-medium, --vibe-calm;
+  --spin-fast: --rotation-tilt, --velocity-fast, --vibe-energetic;
+
+  // Expand
+  --expand-low: --scale-small, --velocity-fast, --vibe-soft;
+  --expand-medium: --scale-medium, --velocity-medium, --vibe-calm;
+  --expand-fast: --scale-large, --velocity-slow, --vibe-energetic;
+}
