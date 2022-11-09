@@ -2,6 +2,7 @@
 # http://git-scm.com/docs/gitignore
 
 *~
+/src/assets/firebase-config-envs.png
 *.sw[mnpcod]
 .tmp
 *.tmp
