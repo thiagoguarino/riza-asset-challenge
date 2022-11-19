@@ -1,15 +1,12 @@
 {
   "projects": {
-    "default": "riza-seed-f0b83"
+    "default": "riza-seed-d500c"
   },
   "targets": {
-    "riza-seed-f0b83": {
+    "riza-seed-d500c": {
       "hosting": {
         "staging": [
-          "riza-seed-staging"
-        ],
-        "production": [
-          "riza-seed-f0b83"
+          "riza-seed-stag"
         ]
       }
     }
