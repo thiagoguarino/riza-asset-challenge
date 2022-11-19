@@ -4,8 +4,6 @@ h1 {
   font-size: 45px;
   font-weight: 600;
   letter-spacing: -.0625rem;
-  position: relative;
-  top: 20px;
   display: flex;
   align-items: flex-start;
 }
@@ -24,23 +22,34 @@ img {
 }
 
 .artist-info {
+  display: flex;
+  flex-direction: row;
   color: var(--brand-color-primary-pure);
   font-size: var(--font-size-xxs);
-  vertical-align: top;
-  top: 40px;
-  width: 600px;
-  margin: 30px;
+  margin: 100px;
+  box-shadow: none;
 }
 
 .all {
-  position: relative;
-  top: 100px;
-  left: 350px;
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 p {
   font-size: 20px;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) { 
+  .artist-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
 }
