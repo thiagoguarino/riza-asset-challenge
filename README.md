@@ -4,7 +4,7 @@ senha bitcket project: ATBBt7GfSa9PWsHJVwg6YWbjkdK8121AAFB3
 A aplicação PWA deve estar disponível no endereço: https://riza-seed.web.app
 O código deve preferencialmente estar em um repositório no Bitbucket.
 
-1 - riza.seed - angular/pwa + deploy firebase
+1 - Exercício 1;  riza.seed - angular/pwa + deploy firebase
 A página inicial da aplicação deve conter o logo da Riza.
 
 referencias:
@@ -29,7 +29,7 @@ https://ionicframework.com/docs/angular/pwa
 5/ Firebase
 https://remotestack.io/connect-firebase-to-ionic-app/
 
-2 - riza.seed - angular/pwa + design system + deploy firebase dev/prod
+2 - - Exercício 2; riza.seed - angular/pwa + design system + deploy firebase dev/prod
 A página inicial da aplicação deve conter componentes referentes a Mousik
 
 Referencias:
@@ -49,3 +49,25 @@ https://medium.com/@bpraveen.in/how-to-manage-dev-and-prod-projects-in-firebase-
 https://codinglatte.com/posts/angular/separating-dev-and-prod-environment-on-firebase/
 https://dev.to/benzguo/firebase-setup-3320
 https://medium.com/@candidosales/ambiente-de-dev-staging-e-production-no-firebase-hosting-e118aa8aaf7
+
+3 - Exercício 3; Retrieve Data from Firebase Using a Service (Read data from database)
+
+Remover os dados da lista de artistas e os detalhes da pagina dos artitas, do código e colocar esses dados dentro do Firestore Database (Não é o realtime database!)
+
+Ou seja resumidamente:
+1/ criar uma coleção dos dados dos artistas no Firebase Database
+2/ criar serviço Angular que le os dados do Database
+3/ passar dados para as variaveis
+
+Bonus: Criar um CRUD de Artistas
+/create-artist
+/delete-artist
+/update-artist
+
+Referencias:
+
+https://blog.fransandi.com/angular-firebase-guide-firestore-database-dcfd8d9dd890
+
+https://www.makeuseof.com/store-update-retrieve-data-from-firebase-database-in-angular/
+
+https://dev.to/coly010/building-a-firebase-crud-service-for-angular-2629
