@@ -10,6 +10,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HeaderModule } from './components/Header/header.module';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -17,6 +20,8 @@ import { HeaderModule } from './components/Header/header.module';
     IonicModule.forRoot(),
     AppRoutingModule,
     HeaderModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
   enabled: environment.production,
   // Register the ServiceWorker as soon as the application is stable
