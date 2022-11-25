@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Artist } from '../../interfaces/Artist';
-import { ARTISTS } from 'src/app/helpers/artistsInfo';
 import { ArtistsInfoService } from 'src/app/services/mousik.services';
 
 @Component({
@@ -10,14 +9,14 @@ import { ArtistsInfoService } from 'src/app/services/mousik.services';
 })
 
 export class ArtistsListComponent implements OnInit {
-
-  artists = ARTISTS; // pass hard coded ArtistsInfo array
   allArtists: Artist[];
   selectedArtist?: Artist;
 
   constructor(private service: ArtistsInfoService) { }
 
+  // on page load, fetch data from firestore
   ngOnInit(): void {
+    this.getArtists();
   }
 
   // using mousik services function to get data from firestore
@@ -25,10 +24,8 @@ export class ArtistsListComponent implements OnInit {
     this.allArtists = await this.service.getAllArtistsInfo();
   }
 
-  // testing if firestore data (array of artistsInfo) is fetched from firebase when artist if clicked
+  // onClick - get selected artist info object
   onSelect(artist: Artist): void {
     this.selectedArtist = artist;
-    const testing = this.getArtists();
-    console.log(testing);
   }
 }

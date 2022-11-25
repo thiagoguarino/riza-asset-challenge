@@ -2,7 +2,7 @@
   <h1>Artistas</h1>
   <div>
     <ul class=container>
-      <li *ngFor="let artist of artists">
+      <li *ngFor="let artist of allArtists">
         <div>
           <div [class.selected]="artist === selectedArtist" type="button" (click)="onSelect(artist)" routerLink='/artistDetails/{{artist.name}}'>
             <div class="item">
