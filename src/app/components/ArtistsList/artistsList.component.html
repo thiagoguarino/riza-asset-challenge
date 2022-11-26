@@ -4,7 +4,7 @@
     <ul class=container>
       <li *ngFor="let artist of allArtists">
         <div>
-          <div [class.selected]="artist === selectedArtist" type="button" (click)="onSelect(artist)" routerLink='/artistDetails/{{artist.name}}'>
+          <div [class.selected]="artist === selectedArtist" type="button" (click)="onSelect(artist)" routerLink='/artistDetails/{{artist.slug}}'>
             <div class="item">
               <img src={{artist.photo}} alt="{{artist.altText}}" />
               <span>{{artist.name}}</span>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Artist } from 'src/app/interfaces/Artist';
 import { ARTISTS } from '../../helpers/artistsInfo';
 
 @Component({
@@ -9,7 +10,7 @@ import { ARTISTS } from '../../helpers/artistsInfo';
 })
 
 export class ArtistsProfileComponent implements OnInit {
-  artistData: any;
+  artistData: Artist[];
 
   constructor(private route: ActivatedRoute) { }
 
@@ -17,7 +18,7 @@ export class ArtistsProfileComponent implements OnInit {
     this.route.params
     .subscribe(params => {
       ARTISTS.filter((artist: any) => {
-        if (artist.name === params.name) {
+        if (artist.slug === params.name) {
           this.artistData = artist;
         }
       });
