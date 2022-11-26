@@ -4,4 +4,5 @@ export interface Artist {
   photo: string;
   description: string[];
   altText: string;
+  slug: string;
 }
