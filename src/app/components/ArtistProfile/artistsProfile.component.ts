@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Artist } from 'src/app/interfaces/Artist';
-import { ARTISTS } from '../../helpers/artistsInfo';
+import { ArtistsInfoService } from 'src/app/services/mousik.services';
 
 @Component({
   selector: 'app-artists-profile',
@@ -10,19 +10,23 @@ import { ARTISTS } from '../../helpers/artistsInfo';
 })
 
 export class ArtistsProfileComponent implements OnInit {
-  artistData: Artist[];
+  artistParam: string;
+  public artistData: Artist;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private service: ArtistsInfoService) { }
 
   ngOnInit(): void {
     this.route.params
     .subscribe(params => {
-      ARTISTS.filter((artist: any) => {
-        if (artist.slug === params.name) {
-          this.artistData = artist;
-        }
-      });
-    }
-  );
+      this.artistParam = params.name;
+    });
+    this.getOneArtist(this.artistParam);
+  }
+
+  // using mousik services function to get data from firestore
+  async getOneArtist(slug: string): Promise<void> {
+    await this.service.getOneArtistInfo(slug).then(result => {
+      this.artistData = result;
+    });
   }
 }
