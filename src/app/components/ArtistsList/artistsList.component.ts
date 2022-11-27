@@ -20,7 +20,7 @@ export class ArtistsListComponent implements OnInit {
   }
 
   // using mousik services function to get data from firestore
-  async getArtists() {
+  async getArtists(): Promise<void> {
     this.allArtists = await this.service.getAllArtistsInfo();
   }
 
