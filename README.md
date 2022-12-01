@@ -59,7 +59,7 @@ Ou seja resumidamente:
 2/ criar serviço Angular que le os dados do Database
 3/ passar dados para as variaveis
 
-Bonus: Criar um CRUD de Artistas
+4 - Exercicio 4; Criar um CRUD de Artistas:
 /create-artist
 /delete-artist
 /update-artist
