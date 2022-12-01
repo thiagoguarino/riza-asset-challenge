@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { ArtistsListComponent } from 'src/app/components/ArtistsList/artistsList.component';
+import { ArtistButtonModule } from 'src/app/components/ArtistButton/artistButton.module';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { ArtistsListComponent } from 'src/app/components/ArtistsList/artistsList
     FormsModule,
     IonicModule,
     HeaderModule,
+    ArtistButtonModule,
     HomePageRoutingModule,
   ],
   declarations: [HomePage, ArtistsListComponent]
