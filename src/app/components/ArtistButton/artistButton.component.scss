@@ -1,0 +1,25 @@
+#testando {
+  font-family: "sans-serif";
+  height: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.78px;
+  outline-color: rgb(255, 255, 255);
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#test2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 700px) { 
+  #testando {
+    display: flex;
+    flex-direction: column;
+  }
+}
