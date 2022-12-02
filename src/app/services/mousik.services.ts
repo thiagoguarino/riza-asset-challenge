@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
-// import { Artist } from '../interfaces/Artist';
+import { Artist } from '../interfaces/Artist';
 
 @Injectable({ providedIn: 'root'})
 export class ArtistsInfoService {
@@ -15,10 +15,33 @@ export class ArtistsInfoService {
   }
 
   async getOneArtistInfo(slug: string): Promise<any> {
-    const db = getFirestore();
-    const artistRef = doc(db, 'artistsInfo', slug);
-    const getFireStoreData = await getDoc(artistRef);
-    const artistData = getFireStoreData.data();
-    return artistData;
+    return this.afs
+    .collection<Artist>('artistsInfo')
+    .doc(slug)
+    .ref
+    .get()
+    .then((documento) => {
+        if (documento.exists) {
+          return documento.data();
+        } else {
+          return 'Doc does not exits';
+        }
+     });
   }
+
+  deleteArtist(slug: string): Promise<void> {
+    return new Promise<void>((resolve, _reject) => {
+      this.afs.collection('artistsInfo')
+        .doc<Artist>(slug)
+        .delete()
+        .then(() => {
+            resolve();
+        });
+    });
+  }
+
+  // TODO: add artist
+
+  // TODO: update artistInfo
+
 }
