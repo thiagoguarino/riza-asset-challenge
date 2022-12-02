@@ -11,9 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  { path: 'artistDetails/:name',
+  {
+    path: 'artistDetails/:name',
     loadChildren: () => import('./pages/ArtistDetails/artist-details.module').then( m => m.ArtistDetailsPageModule)
   },
+  {
+    path: 'artistCreate',
+    loadChildren: () => import('./pages/ArtistCreate/artist-create.module').then( m => m.ArtistCreatePageModule)
+  },
+  {
+    path: 'artistUpdate/:name',
+    loadChildren: () => import('./pages/ArtistUpdate/artist-update.module').then( m => m.ArtistUpdatePageModule)
+  }
 ];
 
 @NgModule({
