@@ -11,7 +11,7 @@ import { ArtistsInfoService } from 'src/app/services/mousik.services';
 
 export class ArtistsProfileComponent implements OnInit {
   artistParam: string;
-  public artistData: Artist;
+  artistData: Artist;
 
   constructor(private route: ActivatedRoute, private service: ArtistsInfoService) { }
 
@@ -23,7 +23,6 @@ export class ArtistsProfileComponent implements OnInit {
     this.getOneArtist(this.artistParam);
   }
 
-  // using mousik services function to get data from firestore
   async getOneArtist(slug: string): Promise<void> {
     await this.service.getOneArtistInfo(slug).then(result => {
       this.artistData = result;

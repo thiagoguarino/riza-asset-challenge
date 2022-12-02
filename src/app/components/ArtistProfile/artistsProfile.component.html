@@ -1,8 +1,8 @@
-<ion-card *ngIf="artistData" class="artist-info">
+<ion-card *ngIf="artistData" class="artist-card">
   <img src={{this.artistData.photo}} alt="{{this.artistData.altText}}" />
-    <div>
+    <div class="artist-card-data">
       <ion-card-header>
-        <ion-card-title><h1>{{this.artistData.name}}</h1></ion-card-title>
+        <ion-card-title>{{this.artistData.name}}</ion-card-title>
       </ion-card-header>
       <ion-card-content *ngFor="let paragraph of this.artistData.description">
         <p>

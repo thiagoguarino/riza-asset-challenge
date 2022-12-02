@@ -1,27 +1,4 @@
-h1 {
-  font-family: "Reckless";
-  font-style: italic;
-  font-size: 45px;
-  font-weight: 600;
-  letter-spacing: -.0625rem;
-  display: flex;
-  align-items: flex-start;
-}
-
-img {
-  object-fit: cover;
-  height: 600px;
-  box-shadow: 0 16px 32px #00000052;
-  border-radius: 8px;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.artist-info {
+.artist-card {
   display: flex;
   flex-direction: row;
   color: var(--brand-color-primary-pure);
@@ -31,24 +8,34 @@ img {
   box-shadow: none;
 }
 
-.all {
+.artist-card-data {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ion-card-title {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Reckless";
+  font-style: italic;
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: -.0625rem;
+}
+
+img {
+  object-fit: cover;
+  height: 600px;
+  box-shadow: 0 16px 32px #00000052;
+  border-radius: 8px;
 }
 
 p {
   font-size: 20px;
 }
 
-div {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 @media (max-width: 700px) { 
-  .artist-info {
+  .artist-card {
     display: flex;
     flex-direction: column;
     margin: 0px;
