@@ -10,11 +10,9 @@ import { ArtistsInfoService } from 'src/app/services/mousik.services';
 
 export class ArtistsListComponent implements OnInit {
   allArtists: Artist[];
-  selectedArtist?: Artist;
 
   constructor(private service: ArtistsInfoService) { }
 
-  // on page load, fetch data from firestore
   ngOnInit(): void {
     this.getArtists();
   }
@@ -22,10 +20,5 @@ export class ArtistsListComponent implements OnInit {
   // using mousik services function to get data from firestore
   async getArtists(): Promise<void> {
     this.allArtists = await this.service.getAllArtistsInfo();
-  }
-
-  // onClick - get selected artist info object
-  onSelect(artist: Artist): void {
-    this.selectedArtist = artist;
   }
 }

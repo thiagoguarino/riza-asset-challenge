@@ -1,17 +1,13 @@
-<div class="all">
-  <h1>Artistas</h1>
-  <div>
-    <ul class=container>
+<div class="all-artists">
+  <h1>ARTISTAS</h1>
+    <ul class=container-artists>
       <li *ngFor="let artist of allArtists">
-        <div>
-          <div [class.selected]="artist === selectedArtist" type="button" (click)="onSelect(artist)" routerLink='/artistDetails/{{artist.slug}}'>
-            <div class="item">
-              <img src={{artist.photo}} alt="{{artist.altText}}" />
-              <span>{{artist.name}}</span>
-            </div>
+        <div type="button" routerLink='/artistDetails/{{artist.slug}}'>
+          <div class="item-artist">
+            <img class="item-artist-img" src={{artist.photo}} alt="{{artist.altText}}" />
+            <span class="item-artist-name">{{artist.name}}</span>
           </div>
         </div>
       </li>
     </ul>
-  </div>
 </div>
