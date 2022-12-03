@@ -13,7 +13,7 @@ export class ArtistDetailsPage implements OnInit {
   artistParam: string;
 
   constructor(private titleService: Title, private service: ArtistsInfoService, private route: ActivatedRoute) {
-    this.titleService.setTitle('Mousik - Artist Details');
+
   }
 
   ngOnInit(): void {
