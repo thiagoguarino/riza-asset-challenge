@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +7,7 @@ import { Title } from '@angular/platform-browser';
 })
 
 export class HomePage {
-  constructor(private titleService: Title) {
-    this.titleService.setTitle('Mousik - Home Page');
+  constructor() {
+
   }
 }
