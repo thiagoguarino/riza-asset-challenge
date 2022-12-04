@@ -1,0 +1,52 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-title-container">
+    <ion-title>{{title}}</ion-title>
+  </div>
+  <ion-item>
+    <ion-label stacked>Id:</ion-label>
+    <ion-input
+        type="number"
+        formControlName="id"
+        placeholder="Ex: 11, 12, 13..."
+        ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Nome:</ion-label>
+    <ion-input
+        type="text"
+        formControlName="name"
+        placeholder="Ex: John Lennon"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Foto de Perfil (file path):</ion-label>
+    <ion-input
+        type="text"
+        formControlName="photo"
+        placeholder="Ex: ../../assets/artists/nomeartista-01.jpg"
+        ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Alt-Text:</ion-label>
+    <ion-input
+        type="text"
+        formControlName="altText"
+        placeholder="Ex: foto artista John Lennon"
+        ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked styles="width: 100%">Slug:</ion-label>
+    <ion-input
+      type="text"
+      formControlName="slug"
+      placeholder="Ex: john-lennon"
+    ></ion-input>
+  </ion-item>
+  <div class="container-form-button">
+    <app-artist-button
+      tipoBotao="submit"
+      title={{title}}
+    >
+    </app-artist-button>
+  </div>
+</form>
