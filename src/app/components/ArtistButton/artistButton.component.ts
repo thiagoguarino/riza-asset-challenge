@@ -10,7 +10,9 @@ import { ArtistsInfoService } from '../../services/mousik.services';
 export class ArtistButtonComponent implements OnInit {
 
   @Input() title: string;
-  @Input() rota: string;
+  @Input() rota?: string;
+  @Input() tipoBotao: string; //submit ou button
+
   service: ArtistsInfoService;
 
   constructor() { }
