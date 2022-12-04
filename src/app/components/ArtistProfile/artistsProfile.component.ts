@@ -23,9 +23,13 @@ export class ArtistsProfileComponent implements OnInit {
     this.getOneArtist(this.artistParam);
   }
 
-  async getOneArtist(slug: string): Promise<void> {
-    await this.service.getOneArtistInfo(slug).then(result => {
-      this.artistData = result;
-    });
+  getOneArtist(slug: string): void {
+    this.artistData =  this.service.getOneDocument(slug).then((doc: { exists: any; data: () => Artist }) => {
+      if (doc.exists) {
+          this.artistData = doc.data();
+      } else {
+          return 'Doc does not exits';
+      }
+   });
   }
 }
