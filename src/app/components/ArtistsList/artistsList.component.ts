@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Artist } from '../../interfaces/Artist';
 import { ArtistsInfoService } from 'src/app/services/mousik.services';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-artists',
@@ -17,8 +18,15 @@ export class ArtistsListComponent implements OnInit {
     this.getArtists();
   }
 
-  // using mousik services function to get data from firestore
-  async getArtists(): Promise<void> {
-    this.allArtists = await this.service.getAllArtistsInfo();
+  getArtists(): void {
+    this.service.getAllDocuments().snapshotChanges().pipe(
+      map((changes: any[]) =>
+        changes.map((c: { payload: { doc: { id: number; data: () => Artist } } }) =>
+          ({ id: c.payload.doc.id, ...c.payload.doc.data() })
+        )
+      )
+    ).subscribe(data => {
+      this.allArtists = data;
+    });
   }
 }
