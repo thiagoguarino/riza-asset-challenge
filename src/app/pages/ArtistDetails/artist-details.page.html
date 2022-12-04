@@ -1,11 +1,13 @@
 <ion-content>
   <app-artists-profile> </app-artists-profile>
   <app-artist-button
+    tipoBotao="button"
     title="Atualizar informações"
     rota="/artistUpdate/{{this.artistParam}}"
   >
   </app-artist-button>
   <app-artist-button
+    tipoBotao="button"
     title="Remover Artista"
     (click)="deleteArtist(this.artistParam)"
   > 

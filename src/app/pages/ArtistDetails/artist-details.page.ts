@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {Title} from '@angular/platform-browser';
+import { Artist } from 'src/app/interfaces/Artist';
 import { ArtistsInfoService } from '../../services/mousik.services';
 
 @Component({
@@ -11,10 +11,9 @@ import { ArtistsInfoService } from '../../services/mousik.services';
 
 export class ArtistDetailsPage implements OnInit {
   artistParam: string;
+  artistData: Artist;
 
-  constructor(private titleService: Title, private service: ArtistsInfoService, private route: ActivatedRoute) {
-
-  }
+  constructor(private service: ArtistsInfoService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params
@@ -24,7 +23,7 @@ export class ArtistDetailsPage implements OnInit {
   }
 
   async deleteArtist(slug: string): Promise<void> {
-    await this.service.deleteArtist(slug);
+    await this.service.deleteDocument(slug);
     window.location.reload();
   }
 }
