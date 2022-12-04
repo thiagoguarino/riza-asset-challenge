@@ -12,7 +12,5 @@ export class ArtistCreatePage implements OnInit {
 
   constructor(private service: ArtistsInfoService) { }
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void { }
 }
