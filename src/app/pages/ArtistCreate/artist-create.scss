@@ -1,0 +1,38 @@
+ion-button {
+  display: flex;
+  width: 210px;
+  height: 50px;
+  font-size: medium;
+  font-family: "sans-serif";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.78px;
+  margin-top: 20px;
+}
+
+#test2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
+}
+
+app-artist-form {
+  margin-bottom: 50px;
+}
+
+#teste3 {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h1 {
+  align-self: center;
+}
+
+app-artist-button {
+  margin: 30px;
+}
