@@ -1,46 +1,34 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Artist } from '../interfaces/Artist';
 
 @Injectable({ providedIn: 'root'})
 export class ArtistsInfoService {
-  constructor(private afs: AngularFirestore) { }
 
-  getAllArtistsInfo(): Promise<any> {
-    const getFireStoreData = new Promise<any>((resolve) => {
-      this.afs.collection('artistsInfo').valueChanges().subscribe(artists => resolve(artists));
-    });
-    return getFireStoreData;
+  collectionRef: AngularFirestoreCollection<Artist>;
+  private mainDbPath = '/artistsInfo';
+
+  constructor(private afs: AngularFirestore) {
+    this.collectionRef = this.afs.collection(this.mainDbPath);
+   }
+
+  getAllDocuments(): AngularFirestoreCollection<Artist> {
+    return this.collectionRef;
   }
 
-  async getOneArtistInfo(slug: string): Promise<any> {
-    return this.afs
-    .collection<Artist>('artistsInfo')
-    .doc(slug)
-    .ref
-    .get()
-    .then((documento) => {
-        if (documento.exists) {
-          return documento.data();
-        } else {
-          return 'Doc does not exits';
-        }
-     });
+  getOneDocument(slug: string): any {
+    return this.collectionRef.doc(slug).ref.get();
   }
 
-  deleteArtist(slug: string): Promise<void> {
-    return new Promise<void>((resolve, _reject) => {
-      this.afs.collection('artistsInfo')
-        .doc<Artist>(slug)
-        .delete()
-        .then(() => {
-            resolve();
-        });
-    });
+  deleteDocument(slug: string): Promise<void> {
+    return this.collectionRef.doc<Artist>(slug).delete();
   }
 
-  // TODO: add artist
+  createDocument(slug: string, artistObj: Artist): any {
+    return this.collectionRef.doc(slug).set(artistObj);
+  }
 
-  // TODO: update artistInfo
-
+  updateDocument(slug: string, artistObj: Artist): Promise<void> {
+    return this.collectionRef.doc(slug).update(artistObj);
+  }
 }
