@@ -1,7 +1,4 @@
-#### riza Project Folder
-
-A aplicação PWA deve estar disponível no endereço: https://riza-seed.web.app
-O código deve preferencialmente estar em um repositório no Bitbucket.
+#### Riza Asset - frontend project
 
 1 - Exercício 1;  riza.seed - angular/pwa + deploy firebase
 A página inicial da aplicação deve conter o logo da Riza.
