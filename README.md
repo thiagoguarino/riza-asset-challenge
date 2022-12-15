@@ -1,5 +1,4 @@
 #### riza Project Folder
-senha bitcket project: ATBBt7GfSa9PWsHJVwg6YWbjkdK8121AAFB3
 
 A aplicação PWA deve estar disponível no endereço: https://riza-seed.web.app
 O código deve preferencialmente estar em um repositório no Bitbucket.
@@ -111,8 +110,11 @@ https://ionicframework.com/docs/api/button
 
 outras:
 https://rxjs.dev/
+
 https://angular.io/api/forms/FormGroup
+
 https://angular.io/guide/forms-overview
+
 https://www.positronx.io/angular-firebase-crud-operations-with-reactive-forms/
 
 https://stackoverflow.com/questions/62629112/i-cant-get-a-single-document-in-firestore-in-angular
